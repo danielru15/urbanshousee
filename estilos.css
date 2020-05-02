@@ -1,0 +1,867 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  background-color: rgba(0, 0, 0, 0.835);
+}
+
+h2{
+  font-style: normal;
+  font-weight: 300;
+}
+
+p {
+  font-style: normal;
+}
+img {
+  max-width: 100%;
+}
+
+
+/* logo y menu */
+
+.cabecera-superior {
+  background-color: rgb(36, 158, 214);
+  padding: 16px 16px;
+  position: fixed;
+  width: 100%;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.397);
+  z-index: 10;
+}
+.menu-cel {
+  display: none;
+}
+.cabecera-superior a{
+  color: white;
+  text-decoration: none;
+}
+
+.cabecera-superior .contenedor {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap:wrap;
+}
+
+.contenedor1 ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+}
+.contenedor1 ul li {
+  display: inline-block;
+}
+.contenedor1 ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  transition:all 0.4s linear;
+  border-radius: 30px;
+}
+.contenedor1 ul li a:hover {
+  background-color: yellowgreen;
+}
+.show{
+  background-color: yellowgreen;
+  border-radius: 30px;
+}
+.cabecera-superior .contenedor h1 {
+  color: white;
+  text-shadow: 3px 6px 3px  #999;
+
+}
+
+
+
+/* imagen hero */
+.banner {
+  width: 85%;
+  height:600px;
+  margin:0 auto;
+  overflow: hidden;
+}
+.banner ul {
+  padding: 0;
+  display: flex;
+  width: 200%;
+  
+  animation:banner 15s infinite alternate;
+}
+@keyframes banner {
+  0% {margin-left: 0;}
+
+  20% {margin-left: 0;}
+
+  25% {margin-left: -100%;}
+
+  45% {margin-left: -100;}
+
+}
+.banner li {
+  width:100%;
+  list-style: none;
+}
+.banner li img {
+  width: 100%;
+  height: 600px;
+}
+
+/* reproductor */
+.reproductor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 85%;
+  height: 50rem;
+  margin:0 auto;
+  background: rgba(3, 119, 158, 0.678);
+  
+}
+.reproductor h2 {
+  padding-top: 70px ;
+  font-size: 60px;
+  color:  rgb(255, 115, 0);
+  font-style: oblique;
+  text-shadow: 2px 6px 2px black;
+}
+.reproductor .ti3{
+  max-width: 100%;
+  margin-top: 20px;
+  width: 400px;
+  height: 400px;
+  background-color: rgba(255, 255, 255, 0.918);
+  border: black 10px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  overflow: inherit;
+  box-shadow:0px 0px 6px 6px rgba(0, 0, 0, 0.623);;
+}
+.reproductor .ti3 h3 {
+  color: black;
+  font-size: 16px;
+  white-space: nowrap;
+  animation: typing 5s steps(30, end );
+  overflow: hidden;
+}
+@keyframes typing{
+ from {
+   width: 0;
+ }
+ to {
+   width: 100%;
+ }
+}
+
+.reproductor .ti3 img {
+   width: 200px;
+  height: 200px;
+  border: black 2px solid;
+}
+audio {
+  margin: 20px;
+}
+/* programación */
+.programacion1 {
+  width: 85%;
+  height: 50rem;
+  margin: 0 auto;
+  background-color: #0083B0;
+ 
+}
+.programacion {
+  margin-top: 90px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.programacion .domingo,.miercoles,.viernes img{
+  width: 300px;
+  height: 300px;
+  margin: 12px;
+  padding: 15px;
+  background-color: white;
+  box-shadow:0 0 5px 5px  rgba(0, 0, 0, 0.514);
+}
+.programacion1 h2 {
+  text-align: center;
+  padding-top: 90px ;
+  font-size: 60px;
+  color:  rgb(255, 115, 0);
+  font-style: oblique;
+  text-shadow: 2px 6px 2px black;
+}
+/* acerca-de */
+.acerca-de {
+  width: 85%;
+  margin: auto;
+  height: 45rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(3, 119, 158, 0.678);
+}
+.acerca-de .textos {
+  width: 600px;
+  margin-left: 80px;
+  margin-right: 60px;
+  text-align: justify;
+  color: white;
+}
+.acerca-de .textos h1 {
+  color:  rgb(255, 115, 0);
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 60px;
+}
+.acerca-de .textos h2 {
+  color: rgb(255, 115, 0);
+  font-style: oblique;
+}
+.acerca-de .imagen {
+  margin-left:80px;
+  margin-right: 80px;
+}
+.acerca-de .imagen img {
+  max-width: 100%;
+  width: 400px;
+  height: 400px;
+  padding: 20px;
+  background-color: white;
+  box-shadow:0 0 10px 10px rgba(0, 0, 0, 0.548);
+}
+
+/* contactanos */
+.contactanos {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row-reverse;
+  width: 85%;
+  margin: 0 auto;
+  height: 45rem;
+  background: #0083B0;  
+}
+.contactanos .texxto h2{
+  text-align: center;
+  color: rgb(255, 115, 0);
+  font-style: oblique;
+  font-size: 2.5em;
+
+}
+.contactanos .texxto {
+ width: 400px;
+ color: white;
+ font-size: 18px;
+ margin-right: 80px;
+ margin-right: 20px;
+
+}
+.contactanos .contacto {
+  background-color: white;
+  width: 500px;
+  padding:20px ;
+  margin-left: 80px;
+  margin-right: 20px;
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.424);
+
+}
+.contactanos .contacto p{
+  font-size: 14px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
+.contactanos input {
+  display: block;
+  width: 100%;
+  border-radius: 30px;
+  border: 1px solid rgba(136, 136, 136, 0.575);
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: rgba(131, 131, 131, 0.575);
+  font-size: 14px;
+}
+.contactanos .boton {
+  width: 300px;
+  background-color: yellowgreen;
+  cursor: pointer;
+  border: none;
+  color: white;
+  margin: 0 auto;
+  text-align: center;
+}
+.contactanos .boton:hover {
+  background-color: rgb(36, 158, 214);;
+}
+textarea {
+  background-color: rgba(131, 131, 131, 0.575); ;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: 100px;
+  min-height: 100px;
+  max-height: 100px;
+  border: 1px solid rgba(138, 139, 141, 0.575);
+  border-radius: 30px;
+  padding: 20px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+/* footer */
+
+.piedepagina {
+ background-color: rgb(36, 158, 214);
+ width: 100%;
+ position: sticky;
+ max-width: 100%;
+ padding: 2rem 0;
+ text-align: center;
+ color: white;
+ margin-top: 5rem;
+}
+/*-----------------------------------------------------------*/
+                 /* vista general */         
+/*-----------------------------------------------------------*/
+@media only screen  and (max-width: 720px) {
+
+ 
+  /* menu cel */
+  .cabecera-superior {
+    background-color: rgb(36, 158, 214);
+    padding: 16px 16px;
+    position: fixed;
+    width: 100%;
+    max-width: 100%;
+    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.397);
+    
+  }
+  .menu-cel{
+    display: block;
+    cursor: pointer;
+    color: white;
+    font-size: 25px;
+  }
+  .contenedor1{
+    width: 100%;
+    margin-top: 16px;
+  }
+  .contenedor1 ul{
+    display: block;
+  }
+  .contenedor1 ul.mostrar{
+    display: none;
+  }
+  .contenedor1 ul li {
+    display: block;
+    text-align: center;
+  }
+  .contenedor1 ul li a {
+    display: block;
+    padding: 0.5rem 0;
+    transition:all 0.4s linear;
+    border-radius: 30px;
+  }
+  .contenedor1 ul li a:hover {
+    background-color: yellowgreen;
+  }
+  /*banner */
+   .banner {
+    width: 100%;
+    max-width:100%;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  .banner li {
+    width:100%;
+    list-style: none;
+  }
+  .banner li img {
+    width: 100%;
+    height: 400px;
+  }
+  /* reproductor */
+  .reproductor {
+    width: 100%;
+    max-width: 1005;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  /* programacion */
+  .programacion1 {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    background-color: #0083B0;
+   
+  }
+  .programacion {
+    margin-top: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .programacion .domingo,.miercoles,.viernes img{
+    width: 300px;
+    height: 300px;
+    margin: 12px;
+    padding: 15px;
+    background-color: white;
+    box-shadow:0 0 5px 5px  rgba(0, 0, 0, 0.514);
+  }
+  .programacion1 h2 {
+    text-align: center;
+    padding-top: 90px ;
+    font-size: 60px;
+    color:  rgb(255, 115, 0);
+    font-style: oblique;
+    text-shadow: 2px 6px 2px black;
+  }
+  
+  /* acerca de */
+  .acerca-de {
+    width: 100%;
+    max-width: 100%;
+    height: 60rem;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(3, 119, 158, 0.678);
+  }
+  .acerca-de .textos {
+    margin: 0 10PX;
+    width: 85%;
+   font-size: 18PX;
+   text-align: justify;
+  } 
+ .acerca-de .imagen {
+    display: flex;
+    width: 100%;
+    padding-top: 60px;
+    justify-content: center;
+    align-items: center;
+  }
+  .acerca-de .imagen img {
+    width: 320px;
+    height: 320px;
+  }
+  .acerca-de .textos h1 {
+    color:  rgb(255, 115, 0);
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 50px;
+  }
+  /*contactanos */
+ .contactanos {
+   width: 100%;
+   max-width: 100%;
+   display: lex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+  }
+  .contactanos .contacto {
+    background-color: white;
+    width: 85%;
+    max-width: 100%;
+    margin: 0 auto;
+    box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.424);
+  
+  }
+  
+}
+
+/*-----------------------------------------------------------*/
+/* vista celulares vertical y horizontal */
+/*-----------------------------------------------------------*/
+@media only screen and (min-device-width : 320px) and (max-device-width : 900px) {
+/*--------------------menu cel --------------------*/
+.cabecera-superior {
+  background-color: rgb(36, 158, 214);
+  padding: 16px 16px;
+  position: fixed;
+  width: 100%;
+  max-width: 100%;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.397);
+  
+}
+.menu-cel{
+  display: block;
+  cursor: pointer;
+  color: white;
+  font-size: 25px;
+}
+.contenedor1{
+  width: 100%;
+  margin-top: 16px;
+}
+.contenedor1 ul{
+  display: block;
+}
+.contenedor1 ul.mostrar{
+  display: none;
+}
+.contenedor1 ul li {
+  display: block;
+  text-align: center;
+}
+.contenedor1 ul li a {
+  display: block;
+  padding: 0.5rem 0;
+  transition:all 0.4s linear;
+  border-radius: 30px;
+}
+.contenedor1 ul li a:hover {
+  background-color: yellowgreen;
+}
+/*----------------- banner ------------------------*/
+ .banner {
+   padding-top: 40px;
+  width: 100%;
+  max-width:100%;
+  height: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.banner li {
+  width:100%;
+  list-style: none;
+}
+.banner li img {
+  width: 100%;
+  height: 400px;
+}
+/*------------- reproductor ------------------------ */
+.reproductor {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.reproductor h2 {
+  margin: 0 10px;
+  width: 85%;
+  font-size: 3.5rem;
+  text-align: center;
+}
+.reproductor .ti3 {
+  width: 85%;
+  max-width: 100%;
+}
+.reproductor .ti3 h3 {
+  display: none;
+}
+audio {
+  width: 85%;
+}
+/*------------------------ programacion -------------------*/
+.programacion1 {
+  width: 100%;
+  height: 80rem;
+  margin: 0 auto;
+  background-color: #0083B0;
+ 
+}
+.programacion {
+  margin-top: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.programacion .domingo,.miercoles,.viernes img{
+  width: 300px;
+  height: 300px;
+  margin: 12px;
+  padding: 15px;
+  background-color: white;
+  box-shadow:0 0 5px 5px  rgba(0, 0, 0, 0.514);
+}
+.programacion1 h2 {
+  color:  rgb(255, 115, 0);
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 3.5rem;
+}
+/*---------------------------- acerca de -------------------*/
+.acerca-de {
+  width: 100%;
+  max-width: 100%;
+  height: 70rem;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(3, 119, 158, 0.678);
+}
+.acerca-de .textos {
+  margin: 0 10PX;
+  width: 85%;
+ font-size: 18PX;
+ text-align: justify;
+} 
+.acerca-de .textos h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+.acerca-de .imagen {
+  display: flex;
+  width: 100%;
+  padding-top: 60px;
+  justify-content: center;
+  align-items: center;
+}
+.acerca-de .imagen img {
+  width: 320px;
+  max-width: 85%;
+  height: 40vmax;
+}
+.acerca-de .textos h1 {
+  color:  rgb(255, 115, 0);
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 4rem;
+}
+/*-----------------------contactanos ------------------------*/
+.contactanos {
+ width: 100%;
+ height: 50rem;
+ max-width: 100%;
+ display: lex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+.contactanos .contacto {
+  background-color: white;
+  width: 85%;
+  max-width: 100%;
+  margin: 0 auto;
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.424);
+
+}
+.contactanos .texxto {
+  margin:0 10PX;
+  margin-bottom: 30px;
+  width: 85%;
+ font-size: 18PX;
+ text-align: justify;
+ }
+ .contactanos .texxto h2 {
+   margin-bottom: 15px;
+ }
+.contactanos .boton {
+  width: 85%;
+}
+/*----------------- footer -------------------*/
+.piedepagina .creador p{
+  margin: 0 auto;
+  width: 85%;
+  text-align: center;
+ }
+}
+/*-----------------------------------------------------------*/
+/* vista ipad vertical y horizontal */
+/*-----------------------------------------------------------*/
+@media only screen
+and (min-device-width : 768px) and (max-width:1024px) {
+/*---------------------- menu cel-------------------------- */
+.cabecera-superior {
+  background-color: rgb(36, 158, 214);
+  padding: 16px 16px;
+  position: fixed;
+  width: 100%;
+  max-width: 100%;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.397);
+  
+}
+.menu-cel{
+  display: block;
+  cursor: pointer;
+  color: white;
+  font-size: 25px;
+}
+.contenedor1{
+  width: 100%;
+  margin-top: 16px;
+}
+.contenedor1 ul{
+  display: block;
+}
+.contenedor1 ul.mostrar{
+  display: none;
+}
+.contenedor1 ul li {
+  display: block;
+  text-align: center;
+}
+.contenedor1 ul li a {
+  display: block;
+  padding: 0.5rem 0;
+  transition:all 0.4s linear;
+  border-radius: 30px;
+}
+.contenedor1 ul li a:hover {
+  background-color: yellowgreen;
+}
+/*--------------------------- banner -------------------------*/
+ .banner {
+   padding-top: 40px;
+  width: 100%;
+  max-width:100%;
+  height: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.banner li {
+  width:100%;
+  list-style: none;
+}
+.banner li img {
+  width: 100%;
+  height: 400px;
+}
+/*------------ reproductor -------------------------*/
+.reproductor {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.reproductor h2 {
+  margin: 0 10px;
+  width: 85%;
+  font-size: 3.5rem;
+  text-align: center;
+}
+.reproductor .ti3 {
+  width: 85%;
+  max-width: 100%;
+}
+.reproductor .ti3 h3 {
+  display: none;
+}
+audio {
+  width: 85%;
+}
+/* ----------------- programacion -------------------- */
+.programacion1 {
+  width: 100%;
+  height: 80rem;
+  margin: 0 auto;
+  background-color: #0083B0;
+ 
+}
+.programacion {
+  margin-top: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.programacion .domingo,.miercoles,.viernes img{
+  width: 300px;
+  height: 300px;
+  margin: 12px;
+  padding: 15px;
+  background-color: white;
+  box-shadow:0 0 5px 5px  rgba(0, 0, 0, 0.514);
+}
+.programacion1 h2 {
+  color:  rgb(255, 115, 0);
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 3.5rem;
+}
+/*-------------------------- acerca de ---------------------*/
+.acerca-de {
+  width: 100%;
+  max-width: 100%;
+  height: 70rem;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(3, 119, 158, 0.678);
+}
+.acerca-de .textos {
+  margin: 0 10PX;
+  width: 85%;
+ font-size: 18PX;
+ text-align: justify;
+} 
+.acerca-de .textos h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+.acerca-de .imagen {
+  display: flex;
+  width: 100%;
+  padding-top: 60px;
+  justify-content: center;
+  align-items: center;
+}
+.acerca-de .imagen img {
+  width: 320px;
+  max-width: 85%;
+  height: 40vmax;
+}
+.acerca-de .textos h1 {
+  color:  rgb(255, 115, 0);;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 4rem;
+}
+/*------------------------contactanos ----------------------*/
+.contactanos {
+ width: 100%;
+ height: 50rem;
+ max-width: 100%;
+ display: lex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+.contactanos .contacto {
+  background-color: white;
+  width: 85%;
+  max-width: 100%;
+  margin: 0 auto;
+  box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.424);
+
+}
+.contactanos .texxto {
+  margin:0 10PX;
+  margin-bottom: 30px;
+  width: 85%;
+ font-size: 18PX;
+ text-align: justify;
+ }
+ .contactanos .texxto h2 {
+   margin-bottom: 15px;
+ }
+.contactanos .boton {
+  width: 85%;
+}
+/* ------------------------footer ----------------------*/
+.piedepagina .creador p{
+  margin: 0 auto;
+  width: 85%;
+  text-align: center;
+ }
+
+}

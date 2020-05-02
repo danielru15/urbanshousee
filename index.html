@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autor" content="daniel ramirez">
+    <link rel="icon" href="img/urban house.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a26714d471.js" crossorigin="anonymous"></script>
+    <title>URBANSHOUSE</title>
+
+</head>
+<body>
+<!-- cabecera superior -->
+<div class="cabecera-superior">
+  <div class="contenedor">
+    <h1>URBANSHOUSE</h1>
+    <span class="menu-cel"><i class="fas fa-align-justify"></i></span>
+    <div class="contenedor1">
+
+      <ul class="mostrar">
+       <li class="fijo"><a href="#inicio">INICIO</a></li>
+       <li class="fijo"><a href="#reproductor"> ESCUCHANOS</a></li>
+       <li class="fijo"><a href="#programacion">PROGRAMACIÓN</a></li>
+       <li class="fijo"><a href="#acerca-de">QUIENES SOMOS</a></li>
+       <li class="fijo"><a href="#contactanos">CONTACTANOS</a></li>
+       
+       
+     </ul>
+    </div>
+
+ </div>
+</div>
+
+<!-- banner -->
+<div id="inicio" class="banner">
+ <ul>
+  <li><img src="img/WhatsApp Image 2020-04-14 at 12.58.04 AM.jpeg" alt=""></li>
+ <li><img src="img/montaje cabina radial.png" alt=""></li>
+ 
+ </ul>
+</div>
+<!-- reproductor -->
+<div class="reproductor">
+    <h2 id="reproductor"> Transmisión en vivo </h2>
+    <div class="ti3">
+      <h3> Recuerda pedir las canciones al 3217513801</h3>
+     <img src="img/urban house.png" alt="">
+     <audio src="http://link.zeno.fm/6sf9xfqb0tzuv" controls="controls"></audio>
+    </div>
+  </div>
+</div>
+<!--- programación -->
+<div class="programacion1" id="programacion">
+  <h2> programación.</h2>
+  <div class="programacion">
+    <div class="domingo">
+      <img src="img/Domingo de retros.png" alt="">
+     </div>
+     <div class="miercoles">
+      <img src="img/miercoles urbans T (1).png" alt="">
+     </div>
+     <div class="viernes">
+       <img src="img/viernes.png" alt="">
+     </div>
+  </div>
+</div>
+
+<!-- acerca de -->
+
+<div id="acerca-de" class="acerca-de">
+  <div class="textos">
+    <h1>¿ Quienes Somos ?</h1>
+    <p>
+      Somos una organizacion la cuál quiere innovar en los medios de comunicación y de entretenimiento.
+      <br>
+      También queremos darle la oportunidad, a los artistas que apenas comienzan o llevan alguna trayectoria en el género urbano, para así poder marcar un cambio positivo en sus carreras.
+    </p>
+    <br>
+    <h2> MISIÓN </h2>
+    <br>
+     <p>
+        Innovar en el medio de comunicación y de radio escucha, para así poder llegar y complacer a todos nuestros oyentes.
+      </p>
+      <br>
+    <h2>VISIÓN</h2>
+    <br>
+    <p>
+      Llegar a nuestros radio escuchas, mejorando cada día mas para poder convertirnos en una Radio FM y apoyar a nuestros talentos locales en su carrera artística.
+    </p>
+  </div>
+  <div class="imagen">
+    <img src="img/acerca-de.jpeg" alt="">
+  </div>
+</div>
+
+<!-- contactenos -->
+<div id="contactanos" class="contactanos">
+  <div class="texxto">
+  <h2 >Contáctanos.</h2>
+  <p> Dudas e inquietudes no dudes en escribirnos con gusto te responderemos en lapso de 24horas.  </p>
+ </div> 
+  <form class="contacto" action="enviar.php" method="post">
+    
+    <p>Nombre:</p>
+    <input type="text" name="nombre" size="30" maxlength="30" required placeholder="Name">
+   <p>Asunto:</p>
+   <input type="text" name="asunto" size="30" maxlength="12" required placeholder="asunt">
+    <p>Correo:</p>
+    <input type="email" name="correo" size="50" maxlength="50" required placeholder="email" >
+    <p>Escríbenos:</p>
+    <textarea name="mensaje" rows="8" cols="80" maxlength="500" required  placeholder="Escribenos"></textarea>
+    <br>
+    <input class="boton" type="submit" name="Enviar" value="Enviar" size="100">
+  </form>
+
+</div>
+<!-- pie de pagina -->
+
+<div class="piedepagina">
+ <div class="creador">
+   <p>Copyright © 2020 urbanshouse | Desarrollado por Daniel Ramirez </p>
+ </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>
